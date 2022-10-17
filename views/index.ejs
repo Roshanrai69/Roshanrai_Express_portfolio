@@ -1,79 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel="stylesheet"href="/bootstrap/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet"href="/@fortawesome/fontawesome-free/css/all.min.css"/>
-</head>
-<body>
+<%- include partials/header.ejs %>
+
+  <%- include partials/main_nav.ejs %>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">COMP229</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
-          </li>
+    <div class="container">
+      <div class="intro_section">
+        <div class="namaskar">
+          <h1>Hello</h1>
+        </div>
+        <div class="main_section">
+          <h2>I’m Roshan Rai, originally from Nepal. I am currently living in Toronto, Canada. </h2>
+        </div>
+        <div class="Email_CTA">
+          <p>Connect With Me: <span><a href="#">rrai7929567@gmail.com</a></span></p>
+        </div>
+      </div>
 
+      <div class="hero_image">
+        <img src="/assets/images/Image_1.jpg" alt="Roshan's image" class="headshot">
+        <img src="/assets/images/arrow.svg" alt="" class="arrow">
+        <!--<p>Hello folks! This is<br>me trying to pose for <br>a good portfolio <br>website photo</p>-->
       </div>
     </div>
 
+    <div class="my_background section">
+      <h2 class="section_heading">My Background</h2>
+      <div class="my_background_details">
+        <p>I am currently enrolled in a software engineering program at <strong>Centennial College, Scarborough,
+            Canada</strong></p>
 
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+        <p>As a student of software engineering technician, I enjoy coding and learning new programming languages.</p>
+
+        <p>Besides, Coding I enjoy watching movies, playing games, listening music and singing.</p>
+
+        <div class="button"></div>
       </div>
     </div>
-  </nav>
+    <div class="my_toolkit section">
+      <h2 class="section_heading">My Toolkit</h2>
+      <div class="my_toolkit_deatils">
+        <img src="/assets/images/svg/bxl-css3.svg" alt="">
+        <img src="/assets/images/svg/bxl-github.svg" alt="">
+        <img src="/assets/images/svg/bxl-flutter.svg" alt="">
+        <img src="/assets/images/svg/bxl-html5.svg" alt="">
+        <img src="/assets/images/svg/bxl-javascript.svg" alt="">
+        <img src="/assets/images/svg/bxl-mongodb.svg" alt="">
+        <img src="/assets/images/svg/bxl-postgresql.svg" alt="">
+      </div>
 
-  <nav class="navbar navbar-light bg-light justify-content-between">
-    <a class="navbar-brand">Navbar</a>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </nav>
-  <h1><%= title %></h1>
-  <p>Hello World <%= title %></p>
-  <script src="/jquery/dist/jquery.min.js"></script>
-  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/Scripts/app.js"></script>
-</body>
-</html>
+    </div>
 
+    <div class="projects section">
+      <h2 class="section_heading">My Projects</h2>
 
+      <div class="project_list_card">
+        <div class="project_deatails button">
+          <h3 class="project_heading">Smash The Bug<span><img src="/assets/images/svg/right-arrow.svg" class="btn_arrow"
+                alt=""></span>
+          </h3>
+          <p>I created this game in my assignment for second semester. Bug Smasher is a HTML canvas game, Where players are challanged to smash the BUG by clicking on
+            it as it randomly hops to random location on the screen. The speed of the bug increases as you
+            score more so the game gets harder as you progresss.</p>
+        </div>
+        <div class="info_pill">
+          <p>JavaScript</p>
+        </div>
+        <div class="info_pill">
+          <p>HTML</p>
+        </div>
+        <div class="info_pill">
+          <p>CSS</p>
+        </div>
+      </div>
 
+      <div class="project_list_card">
+        <div class="project_deatails button">
+          <h3 class="project_heading">Personal Portfolio<span><img src="/assets/images/svg/right-arrow.svg"
+                class="btn_arrow" alt=""></span>
+          </h3>
+          <p>I made my personal portfolio in my first semester assignment using html and css. My Personal Portfoilo Websites contains all of the professional details.</p>
+        </div>
+        <div class="info_pill">
+          <p>HTML</p>
+        </div>
+        <div class="info_pill">
+          <p>CSS</p>
+        </div>
+      </div>
 
+      <div class="project_list_card">
+        <div class="project_deatails button">
+          <h3 class="project_heading">Real State Website<span><img src="/assets/images/svg/right-arrow.svg"
+                class="btn_arrow" alt=""></span>
+          </h3>
+          <p>This was my individual project for third semester. This is a static website I built for my 1 semster project. It's for a imaginary real estate
+            company.</p>
+        </div>
+        <div class="info_pill">
+          <p>HTML</p>
+        </div>
+        <div class="info_pill">
+          <p>CSS</p>
+        </div>
+      </div>
 
-
-
-
-
-
-
+      <%- include partials/footer.ejs %>
