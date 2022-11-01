@@ -3,6 +3,28 @@ const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 
+// IIFE -- Immediately Invoked Function Expression
+(function () {
+
+    function Start() {
+        console.log("App Started...");
+
+        let deleteButtons = document.querySelectorAll('.btn-danger');
+
+        for (button of deleteButtons) {
+            button.addEventListener('click', (event) => {
+                if (!confirm("Are you sure?")) {
+                    event.preventDefault();
+                    window.location.assign('/book-list');
+                }
+            });
+        }
+    }
+
+    window.addEventListener("load", Start);
+
+})();
+
 sendButton.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('send button clicked');
